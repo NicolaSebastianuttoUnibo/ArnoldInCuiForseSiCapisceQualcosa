@@ -56,52 +56,54 @@
 <h2>Sistemi a due gradi di libertà</h2>
 <p>  Vado subito in generale: dato un sistema a n gradi di libertà il sistema è descritto dall'equazione differenziale \(\ddot{\vec{x}}=\vec{f}(\vec{x})\) con \(\vec{x} \in \mathbb{E}^n\)
 </p>
-    <p>\(\ddot{\textbf{x}}=(\ddot{x_1},...,\ddot{x_n})=\)<span style="color: red;font-size: 20px;">-</span>\((\frac{\partial U}{\partial x_1},...,\frac{\partial U}{\partial x_n})\)</p>
-<p>Se sei un pro, puoi fare il teorema della legge di conservazione dell'energia in più din dimensioni e studiare le figure di Lissajou: non li faccio perchè non ho voglia e ora devo andare a mangiare dei panzerotti</p>
+    <p>\(\ddot{\textbf{x}}=(\ddot{x_1},...,\ddot{x_n})=\)<span style="color: red;font-size: 200px;">-</span>\((\frac{\partial U}{\partial x_1},...,\frac{\partial U}{\partial x_n})\)</p>
+<p>Se sei un pro, puoi fare il teorema della legge di conservazione dell'energia in più dimensioni e studiare le figure di Lissajou: non li faccio perchè non ho voglia e ora devo andare a mangiare dei panzerotti</p>
    <h2>Campo di forze conservative</h2> 
     <p><strong>Cosa è il lavoro? </strong> Il lavoro, oltre a fare schifo, è definito anche nel seguente modo \(A=\langle \vec{\textbf{F}},\vec{\textbf{S}} \rangle=\lvert \vec{\textbf{F}} \rvert \cdot \lvert \vec{\textbf{S}} \rvert \cdot \cos{\phi}\) che fa ancora più schifo (\(\vec{\textbf{F}}\) è la forza costante lungo un cammino rettilineo \(\vec{\textbf{S}}\))</p>
 <p> In generale definiamo A così: \(A=\int_{\ell} \lvert \vec{\textbf{F}},ds\rvert\)</p>
 
 <h2>Campo centrale, detto anche campo centrale, sinonimo di campo centrale, conosciuto meglio come campo centrale, ma spesso definito come campo centrale, anche se il suo vero nome è campo centrale</h2>
-<p>Consideriamo una cosa semplice: il piano \(\mathbb{R}^2\) con un centro/origine in <em>O</em>. Un campo vettoriale si dice <strong>invariante</strong> rispetto all'insieme/al gruppo dei movimenti del piano che lasciano fisso l'origine <em>O</em></p>. I movimenti non sono tutti i movimenti, i movimenti sono tutte le trasformazioni del piano in sè che lasciano <strong>inalterate</strong> le distanze fra i punti: stiamo quindi soltanto considerando rotazioni e riflessioni attorno <em>O</em>. 
+<p>Consideriamo una cosa semplice: il piano \(\mathbb{R}^2\) con un centro/origine in <em>O</em>. Un campo vettoriale si dice <strong>invariante</strong> rispetto all'insieme/al gruppo dei movimenti del piano che lasciano fisso l'origine <em>O</em></p>
+    <p>I movimenti non sono tutti i movimenti, i movimenti sono tutte le trasformazioni del piano in sè che lasciano <strong>inalterate</strong> le distanze fra i punti: stiamo quindi soltanto considerando rotazioni e riflessioni attorno <em>O</em>. </p>
 
 <h3>Facciamo un piccolo gioco</h3>
     <p>Cerchiamo di dimostrare che tutti i vettori di un campo centrale giacciono/stannno su raggi/rette passanti per <em>O</em>, inoltre vogliamo verificare che il modulo del vettore del campo in un punto dipende solo dalla distanza del punto dal centro del campo</p>. 
 <p>Prima di giocare facciamo un po' di teoria.</p>
-    <p>Ogni rotazione del piano di un angolo \(\phi \in S^1\) si scrive come \(R_{\phi}=\begin{pmatrix} \cos{\phi} & \sin{\phi} \\  -\sin{\phi} & \cos{\phi}  \end{pmatrix}\). Ora elenco le proprietà di questa matrice/applicazione lineare: ha determinante 1; \(R_{\phi_2} \circ R_{\phi_1}= R_{\phi_2+\phi_1}; {R_{\phi}}^{-1}=R_{-\phi}\); contiene la matrice d'identità \(R_0={R_{\phi}}^{-1} \circ R_{\phi} \). Queste trasformazioni sono dette rotazioni e vieni indicato SO(2) che è un sottogruppo di O(2)</p>
+    <p>Ogni rotazione del piano di un angolo \(\phi \in S^1\) si scrive come \(R_{\phi}=\begin{pmatrix} \cos{\phi} & \sin{\phi} \\  -\sin{\phi} & \cos{\phi}  \end{pmatrix}\). Ora elenco le proprietà di questa matrice/applicazione lineare:</p>
+    <p>ha determinante 1; \(R_{\phi_2} \circ R_{\phi_1}= R_{\phi_2+\phi_1}; {R_{\phi}}^{-1}=R_{-\phi}\); contiene la matrice d'identità \(R_0={R_{\phi}}^{-1} \circ R_{\phi} \). Queste trasformazioni sono dette rotazioni e viene indicato con SO(2) che è un sottogruppo di O(2)</p>
     <p>\(O(2)=\){G matrice \(2 \times 2: G^T=G^{-1}\) id est(in altre parole)\(\lVert G(\mathbf{r})\rVert =\lVert \mathbf{r} \rVert \forall \mathbf{r} \in \mathbb{R}^2\)} </p>
     <p>Ora ci sarebbe il giochino vero e proprio ma ci sono cose che non ho capito: da vedere</p>
     <p>Scrivo solo una cosa abbastanza ovvia che si ottiene dal giochino: \(\mathbf{F}(\mathbf{r})=\Phi(r)\cdot \mathbf{e}_r\)</p> dove  \(\mathbf{e}_r\) è il nostro versore, r è il modulo del vettore \(\lVert \mathbf{r}\rVert\) e \(\Phi\) è una funzione scalare
     <h3>Teorema: i campi centrali sono di destra e la sua energia potenziale dipende esclusivamente dalla distanza dal suo centro U=U(r)</h3>
-    <p>\( \int_{M_1}^{M_2} \rangle\mathbf{F},d\mathbf{s}\langle\)   </p>
+    <p>\( \int_{M_1}^{M_2} \langle\mathbf{F},d\mathbf{s}\rangle\)   </p>
  <p>\(\mathbf{F}(\mathbf{s})=\Phi(r)\cdot \mathbf{e}_r \)</p>
     <p>dopo aver assunto delle droghe forse puoi capire perchè questo integrale può essere scritto nel seguente modo \(\int_{r(M_1)}^{r(M_2)} \Phi (r)dr\) questo ultimo integrale non dipende dal percorso, ergo il lavoro è nullo, ergo il campo è conservativo e dipende solo da \(r\) </p>
 <h4>Il momento della quantità di moto</h4>
 <p>Il moto di un punto materiale in un campo centrale sul piano è definita dalla seguente equazione: \(\ddot{r}=\Phi (r) \mathbf{e}_r \quad (\ddot{x}=f(x))\)</p>
 <p><strong>Def(momento della quantità di moto, momento cinetico, momento angolare)</strong>\( \mathbf{M}=\mathbf{r}\wedge \dot{\mathbf{r}}\)</p>
-    <p>il vettore \(\vec{\mathbf{M}}\) è perpendicolare al nostro piano, quindi in \(\mathbb{R}^2, \vec{\mathbf{M}} \) è perpendicolare all'asse z</p>
+    <p>il vettore \(\vec{\mathbf{M}}\) è perpendicolare al nostro piano, quindi in \(\mathbb{R}^2, \vec{\mathbf{M}} \) è parallela all'asse z</p>
 
     <h4>Teorema: dimostro che il momento angolare si conserva</h4>
-  <p>\(\dot{\mathbf{M}}=\dot{\mathbf{r}}+\wedge \dot{\mathbf{r}}+\dot{\mathbf{r}}+\wedge \ddot{\mathbf{r}}\) \(r\) e \(\ddot{r}\) sono collineari quindi esplode (è collineare per la definizione di equazione del moto per un campo centrale einoltre la forza, quindi l'accelerazione, è diretta radialmente)</p>
+  <p>\(\dot{\mathbf{M}}=\dot{\mathbf{r}} \wedge \dot{\mathbf{r}}+\dot{\mathbf{r}} \wedge \ddot{\mathbf{r}}\) \(r\) e \(\ddot{r}\) sono collineari quindi il secondo addendo esplode (è collineare per la definizione di equazione del moto per un campo centrale einoltre la forza, quindi l'accelerazione, è diretta radialmente) (il primo addedno esplode perchè un vettore è parallelo a sé stesso)</p>
 
     <h2>Keplero: il mio migliore amico</h2>
 <p>\(\dot{\mathbf{r}}=\dot{r} \mathbf{e}_r+r \dot{\varphi} \mathbf{e}_{\phi}\) con \(\mathbf{e}_{\varphi} = (\cos{\varphi}, \sin{\varphi}) \) </p>
     <p>si può ottenere senza troppi sforzi mentali che \(M=r^2 \dot{\varphi}\)</p>
     <p>Prima di commentare questa parte vado a mangiare il panettone (non il modello a panettone di Thomson)</p>
 <p>dato che il momento angolare è costante, vuol dire che \(M=r^2 \dot{\varphi}\) si conserva</p>
-    <p>Ma cosa è che questa cosa costante? Copernico fa una cosa pazzesca: prende la velocità aereolare e la chiama C (C di Chad) e poi fa altre cose pazzesche: </p>
+    <p>Ma cosa è questa cosa costante? Copernico fa una cosa pazzesca: prende la velocità aereolare e la chiama C (C di Chad) e poi fa altre cose pazzesche: </p>
 <p>\(C=\frac{dS}{dt}\)</p>
     <p>Prendiamo un intervallo finito \(\Delta S=S(t+\Delta t)-S(t)=\frac{1}{2}r^2 \dot{\varphi} \Delta t +o(\Delta t)\) ho usato la formula: \(A_{triangolo}=ab\sin{\alpha}\) </p>
-    <p>guardando gli infinitesimi si ottiene questa magnifica: \(c=\frac{dS}{dt}=\frac{1}{2} r^2 \dot{\varphi}=\frac{M}{2}\)</p>
+    <p>guardando gli infinitesimi si ottiene questa cosa magnifica: \(c=\frac{dS}{dt}=\frac{1}{2} r^2 \dot{\varphi}=\frac{M}{2}\)</p>
     <p>Prima abbiamo dimostrato che M è costante, quindi se la velocità aereolare è \(\frac{M}{2}\), abbiamo dimostrato che Coperico è un Chad</p>
 <h3>Teorema simpatico :)</h3>
   <p>prima di capire l'enunciato, dimostriamo</p> 
-    <p>\ddot{\textbf{r}}=(\ddot{r}-r{\dot{\varphi}}^2)\textbf{e}_r+(2\dot{r} \dot{\varphi}^2+r \ddot{\varphi})\textbf{e}_{\varphi}</p>
+    <p>\(\ddot{\textbf{r}}=(\ddot{r}-r{\dot{\varphi}}^2)\textbf{e}_r+(2\dot{r} \dot{\varphi}^2+r \ddot{\varphi})\textbf{e}_{\varphi}\)</p>
     <p>\(\nabla U \equiv \frac{\partial U}{\partial \vec{\textbf{r}}}=\frac{\partial U}{\partial r} \textbf{e}_r\)</p>
 <p>\(\ddot{r}-r {\dot{\varphi}}^2=-\frac{\partial U}{\partial r}\); \(2 \dot{r}\dot{\varphi}+r \ddot{\varphi}=0\)</p>
     <p>Sappiamo che \(\dot{\varphi}=\frac{M}{r^2}\)</p>
-    <p>Combinando le cose si ha: \(\ddot{r}=-frac{\partial U}{\partial r}+\frac{M^2}{r^3}\)</p>
-    <p>Definiamo un oggetto particolare tramite questa equazione magnifica: \(\ddot{r}=\frac{\partial V}{\partial r}\) V(r) è un potenziale randomico di un problema unidimensionale randomico fatto a casissimo che varia in modo in modo corripondente alla variazione di r, per questo vale l'equazione magnifica </p>
+    <p>Combinando le cose si ha: \(\ddot{r}=-\frac{\partial U}{\partial r}+\frac{M^2}{r^3}\)</p>
+    <p>Definiamo un oggetto particolare tramite questa equazione magnifica \(\ddot{r}=\frac{\partial V}{\partial r}\): V(r) è un potenziale randomico di un problema unidimensionale randomico fatto a casissimo che varia in modo corripondente alla variazione di r, per questo vale l'equazione magnifica </p>
     <p>Integrando si ottiene \(V=U+\frac{M^2}{2 r^2}\)</p>
     <p>Concludo la giornata dicendo che l'energia del problema unidimensionale coincide con l'energia del problema bidimensionale: \(E_1=\frac{\dot{r}^2}{2}+V(r)\) mentre \(E_2=\frac{\dot{\vec{\textbf{r}}}^2}{2}+U(r)\)</p>
     <p>\(E_1=E_2\) deriva dal fatto che \(\frac{{\vec{\textbf{r}}}^2}{2}=\frac{\dot{r}^2}{2}+\frac{M^2}{2r^2}\)</p>
