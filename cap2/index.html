@@ -28,14 +28,18 @@
             margin: 10px 0;
         }
     </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 <body>
 
     <h1>Equazioni del moto</h1>
     <h2>Sistemi ad un grado di libertà:</h2>
-  <p><strong>Def (sistema conservativo):</strong> un sistema è conservativo se $x^2 = f(x)$</p>
+  <p><strong>Def (sistema conservativo):</strong> un sistema è conservativo se $\ddot{x} = f(x)$</p>
 
 
 </body>
