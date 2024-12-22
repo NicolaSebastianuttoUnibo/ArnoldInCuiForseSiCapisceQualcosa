@@ -40,24 +40,53 @@
   <strong>Def (sistema conservativo):</strong> un sistema è conservativo se  \(E=mc^2\) e \( \ddot{x} =f(x)  \)
 </p>
 <p><strong>Energia potenziale</strong> \(U(x)=-\int_{x_0}^{x}f(\xi)d\xi\)</p>
-<p>perchè il segno meno? in questo modo più è alto il grave più è grande l'energia potenziale (asse z verso l'alto=> forza di gravità verso il massa=> U=+mgz)
+<p>perchè il segno meno? in questo modo più è alto il grave più è grande l'energia potenziale (asse z verso l'alto=> forza di gravità verso il basso=> U=+mgz)
 </p>
 <h3>Teorema della legge di conservazione dell'energia cinetica</h3>
-    <p><strong>Enunciato:</strong> in un sistema conservativo, l'energia totale si conserva in altre parole \(   \frac{d}{dt}(T(\dot{x}(t))+U(x(t),\dot{x}(t)))     \)=0</p>
+    <p><strong>Enunciato:</strong> in un sistema conservativo, l'energia totale si conserva in altre parole \(   \frac{d}{dt}(T(\dot{x}(t))+U(x(t),\dot{x}(t)))    =0 \)</p>
    <p>per la dimostrazione usa derivata del prodotto per l'energia cinetica e per l'energia potenziale definisci una cosa chiamata forza \(f(x)=\frac{dU}{dx}\), infine raccogli \(\dot{x}\) </p>
 <h2>Un po' di definizioni:</h2>
- <p><strong>Def(Curva di fase):</strong>: l’insieme dei punti rappresentativi associati a un valore fissato dell’energia totale, che per la conservazione dell’energia è costante.</p>
- <p><strong>Def(Equazione di Newton):</strong>\(\ddot{x}=F(x,\dot{x},t)=>m\ddot{x}=-\frac{dU}{dx}\)</p>
-     <p><strong>Def(Insieme di livello):</strong>valore che viene attribuito all’energia totale del nostro sistema</p>
-     <p><strong>Def(Piano delle fasi):</strong>dato il seguente sistema di equazione del primo ordine \(  \begin{equation}  \begin{cases}\dot{x}=y\\ \dot{y}=f(x)\end{cases}\,.\end{equation}\) è possibile costruire il piano munito delle coordinate(x,y) e lo chiamiamo piano delle fasi.</p>
-     <p><strong>Def(Posizione di equilibrio):Curva di fase puntiforme</strong></p>
-     <p><strong>Def(Punti rappresentativi):</strong>i punti del piano delle fasi</p>
-     <p><strong>Def(Sistema potenziale):</strong>Sistema conservativo</p>
+ <p><strong>Def(Curva di fase): </strong>l’insieme dei punti rappresentativi associati a un valore fissato dell’energia totale, che per la conservazione dell’energia è costante.</p>
+ <p><strong>Def(Equazione di Newton): </strong>\(\ddot{x}=F(x,\dot{x},t) \Rightarrow m\ddot{x}=-\frac{dU}{dx}\)</p>
+     <p><strong>Def(Insieme di livello): </strong>valore che viene attribuito all’energia totale del nostro sistema</p>
+     <p><strong>Def(Piano delle fasi): </strong>dato il seguente sistema di equazione del primo ordine \(  \begin{equation}  \begin{cases}\dot{x}=y\\ \dot{y}=f(x)\end{cases}\, \end{equation}\) è possibile costruire il piano munito delle coordinate(x,y) e lo chiamiamo piano delle fasi.</p>
+     <p><strong>Def(Posizione di equilibrio): </strong>Curva di fase puntiforme</p>
+     <p><strong>Def(Punti rappresentativi): </strong>i punti del piano delle fasi</p>
+     <p><strong>Def(Sistema potenziale): </strong>Sistema conservativo</p>
 <h2>Sistemi a due gradi di libertà</h2>
-<p>  Vado subito in generale: dato un sistema a n gradi di libertà il sistema è descritto dall'equazione differenziale \(\ddot{\vec{x}}=\vec{f}(\vec{x})\) con \(x \in \mathbb{E}^n\)
+<p>  Vado subito in generale: dato un sistema a n gradi di libertà il sistema è descritto dall'equazione differenziale \(\ddot{\vec{x}}=\vec{f}(\vec{x})\) con \(\vec{x} \in \mathbb{E}^n\)
 </p>
-    <p>\(\ddot{\textbf{x}}=(\ddot{x_1},...,\ddot{x_n})=\)<span style="color: red;">-</span>\((\frac{\partial U}{\partial x_1},...,\frac{\partial U}{\partial x_n})\)</p>
-<p>Se sei un pro, puoi fare il teorema della legge di conservazione dell'enmergia in più din dimensioni e studiare le figure di Lissajou: non li faccio perchè non ho voglia e ora devo andare a mangiare dei panzerotti</p>
-    
+    <p>\(\ddot{\textbf{x}}=(\ddot{x_1},...,\ddot{x_n})=\)<span style="color: red;font-size: 20px;">-</span>\((\frac{\partial U}{\partial x_1},...,\frac{\partial U}{\partial x_n})\)</p>
+<p>Se sei un pro, puoi fare il teorema della legge di conservazione dell'energia in più din dimensioni e studiare le figure di Lissajou: non li faccio perchè non ho voglia e ora devo andare a mangiare dei panzerotti</p>
+   <h2>Campo di forze conservative</h2> 
+    <p><strong>Cosa è il lavoro? </strong> Il lavoro, oltre a fare schifo, è definito anche nel seguente modo \(A=\bra\vec{\textbf{F}},\vec{\textbf{S}}\ket=\lvert\vec{\textbf{F}}\rvert\cdot\lvert\vec{\textbf{S}}\rvert \cdot \cos{\phi}) che fa ancora più schifo (\(\vec{\textbf{F}}\) è la forza costante lungo un cammino rettilineo \(\vec{\textbf{S}}\))</p>
+<p> In generale definiamo A così: \(A=\int_{\ell} \lvert\(\vec{\textbf{F}}\),ds\rvert\)</p>
+
+<h2>Campo centrale, detto anche campo centrale, sinonimo di campo centrale, conosciuto meglio come campo centrale, ma spesso definito come campo centrale, anche se il suo vero nome è campo centrale</h2>
+<p>Consideriamo una cosa semplice: il piano \(\mathbb{R}^2\) con un centro/origine in <em>O</em>. Un campo vettoriale si dice <strong>invariante</strong> rispetto all'insieme/al gruppo dei movimenti del piano che lasciano fisso l'origine <em>O</em></p>. I movimenti non sono tutti i movimenti, i movimenti sono tutte le trasformazioni del piano in sè che lasciano <strong>inalterate</strong> le distanze fra i punti: stiamo quindi soltanto considerando rotazioni e riflessioni attorno <em>O</em>. 
+
+<h3>Facciamo un piccolo gioco</h3>
+    <p>Cerchiamo di dimostrare che tutti i vettori di un campo centrale giacciono/stannno su raggi/rette passanti per <em>O</em>, inoltre vogliamo verificare che il modulo del vettore del campo in un punto dipende solo dalla distanza del punto dal centro del campo</p>. 
+<p>Prima di giocare facciamo un po' di teoria.</p>
+    <p>Ogni rotazione del piano di un angolo \(\phi \in S^1\) si scrive come \(R_{\phi}=\begin{pmatrix} \cos{\phi} & \sin{phi} \\  -\sin{phi} & \cos{phi}  \end{pmatrix}\). Ora elenco le proprietà di questa matrice/applicazione lineare:ha determinante 1; \(R_{\phi_2} \circ R_{\phi_1}= R_{\phi_2+\phi_1}; {R_{\phi}}^{-1}=R_{-\phi}; contiene la matrice d'identità R_0={R_{\phi}}^{-1} \circ R_{\phi} \). Queste trasformazioni sono dette rotazioni e vieni indicato SO(2) che è un sottogruppo di O(2)</p>
+    <p>\(O(2)={G matrice 2 \times 2: G^T=G^{-1} id est(in altre parole)\lVert G(\mathbf{r})\rVert =\lVert \mathbf{r} \rVert \foreach \mathbf{r} \in \mathbb{R}^2} \)</p>
+    <p>Ora ci sarebbe il giochino vero e proprio ma ci sono cose che non ho capito: da vedere</p>
+    <p>Scrivo solo una cosa abbastanza ovvia che si ottiene dal giochino: \(\mathbf{F}(\mathbf{r})=\Phi(r)\cdot \mathbf{e}_r\)</p> dove  \mathbf{e}_r è il nostro versore, r è il modulo del vettore \lVert \mathbf{r}\rVert e \Phi è una funzione scalare
+    <h3>Teorema: i campi centrali sono di destra e la sua energia potenziale dipende esclusivamente dalla distanza dal suo centro U=U(r)</h3>
+    <p>\( \int_{M_1}^{M_2} \bra\mathbf{F},d\mathbf{s}\ket\)   </p>
+ <p>\(\mathbf{F}(\mathbf{s})=\Phi(r)\cdot \mathbf{e}_r \)</p>
+    <p>dopo aver assunto delle droghe forse puoi capire perchè questo integrale può essere scritto nel seguente modo \int_{r(M_1)}^{r(M_2)} \Phi (r)dr questo ultimo integrale non dipende dal percorso, ergo il lavoro è nullo, ergo il campo è conservativo e dipende solo da \(r\) </p>
+<h4>Il momento della quantità di moto</h4>
+<p>Il moto di un punto materiale in un campo centrale sul piano è definita dalla seguente equazione: \(\ddot{r}=\Phi (r) \mathbf{e}_r (\ddot{x}=f(x))\)</p>
+<p><strong>Def(momento della quantità di moto, momento cinetico, momento angolare)</strong>\( \mathbf{M}=\mathbf{r}\wedge \dot{\mathbf{r}}\)</p>
+    <p>il vettore \(\vec{\mathbf{M}}\) è perpendicolare al nostro piano, quindi in \(mathbb{R}^2, \vec{\mathbf{M}} \) è perpendicolare all'asse z</p>
+
+    <h4>Teorema: dimostro che il momento angolare si conserva</h4>
+  <p>\(\dot{\mathbf{M}}=\dot{\mathbf{r}}+\wedge \dot{\mathbf{r}}+\dot{\mathbf{r}}+\wedge \ddot{\mathbf{r}}\) \(r\) e \(\ddot{r}\) sono collineari quindi esplode (è collineare per la definizione di equazione del moto per un campo centrale einoltre la forza, quindi l'accelerazione, è diretta radialmente)</p>
+
+    <h2>Keplero: il mio migliore amico</h2>
+<p>\(\dot{\mathbf{r}}=\dot{r} \mathbf{e}_r+r \dot{\phi} \mathbf{e}_{\phi} con \mathbf{e}_{\phi} = (\cos{\phi}, \sin{\phi}) \) </p>
+    <p>si può ottenere senza troppi sforzi mentali che \(M=r^2 \dot{\phi}\)</p>
+    <p>Prima di commentare questa parte vado a mangiare il panettone (non il modello a panettone di Thomson)</p>
 </body>
 </html>
