@@ -85,10 +85,26 @@
   <p>\(\dot{\mathbf{M}}=\dot{\mathbf{r}}+\wedge \dot{\mathbf{r}}+\dot{\mathbf{r}}+\wedge \ddot{\mathbf{r}}\) \(r\) e \(\ddot{r}\) sono collineari quindi esplode (è collineare per la definizione di equazione del moto per un campo centrale einoltre la forza, quindi l'accelerazione, è diretta radialmente)</p>
 
     <h2>Keplero: il mio migliore amico</h2>
-<p>\(\dot{\mathbf{r}}=\dot{r} \mathbf{e}_r+r \dot{\phi} \mathbf{e}_{\phi}\) con \(\mathbf{e}_{\phi} = (\cos{\phi}, \sin{\phi}) \) </p>
-    <p>si può ottenere senza troppi sforzi mentali che \(M=r^2 \dot{\phi}\)</p>
+<p>\(\dot{\mathbf{r}}=\dot{r} \mathbf{e}_r+r \dot{\varphi} \mathbf{e}_{\phi}\) con \(\mathbf{e}_{\varphi} = (\cos{\varphi}, \sin{\varphi}) \) </p>
+    <p>si può ottenere senza troppi sforzi mentali che \(M=r^2 \dot{\varphi}\)</p>
     <p>Prima di commentare questa parte vado a mangiare il panettone (non il modello a panettone di Thomson)</p>
-<p>dato che il momento angolare è costante, vuol dire che \(M=r^2 \dot{\phi} si conserva\)</p>
+<p>dato che il momento angolare è costante, vuol dire che \(M=r^2 \dot{\varphi}\) si conserva</p>
     <p>Ma cosa è che questa cosa costante? Copernico fa una cosa pazzesca: prende la velocità aereolare e la chiama C (C di Chad) e poi fa altre cose pazzesche: </p>
+<p>\(C=\frac{dS}{dt}\)</p>
+    <p>Prendiamo un intervallo finito \(\Delta S=S(t+\Delta t)-S(t)=\frac{1}{2}r^2 \dot{\varphi} \Delta t +o(\Delta t)\) ho usato la formula: \(A_{triangolo}=ab\sin{\alpha}\) </p>
+    <p>guardando gli infinitesimi si ottiene questa magnifica: \(c=\frac{dS}{dt}=\frac{1}{2} r^2 \dot{\varphi}=\frac{M}{2}\)</p>
+    <p>Prima abbiamo dimostrato che M è costante, quindi se la velocità aereolare è \(\frac{M}{2}\), abbiamo dimostrato che Coperico è un Chad</p>
+<h3>Teorema simpatico :)</h3>
+  <p>prima di capire l'enunciato, dimostriamo</p> 
+    <p>\ddot{\textbf{r}}=(\ddot{r}-r{\dot{\varphi}}^2)\textbf{e}_r+(2\dot{r} \dot{\varphi}^2+r \ddot{\varphi})\textbf{e}_{\varphi}</p>
+    <p>\(\nabla U \equiv \frac{\partial U}{\partial \vec{\textbf{r}}}=\frac{\partial U}{\partial r} \textbf{e}_r\)</p>
+<p>\(\ddot{r}-r {\dot{\varphi}}^2=-\frac{\partial U}{\partial r}\); \(2 \dot{r}\dot{\varphi}+r \ddot{\varphi}=0\)</p>
+    <p>Sappiamo che \(\dot{\varphi}=\frac{M}{r^2}\)</p>
+    <p>Combinando le cose si ha: \(\ddot{r}=-frac{\partial U}{\partial r}+\frac{M^2}{r^3}\)</p>
+    <p>Definiamo un oggetto particolare tramite questa equazione magnifica: \(\ddot{r}=\frac{\partial V}{\partial r}\) V(r) è un potenziale randomico di un problema unidimensionale randomico fatto a casissimo che varia in modo in modo corripondente alla variazione di r, per questo vale l'equazione magnifica </p>
+    <p>Integrando si ottiene \(V=U+\frac{M^2}{2 r^2}\)</p>
+    <p>Concludo la giornata dicendo che l'energia del problema unidimensionale coincide con l'energia del problema bidimensionale: \(E_1=\frac{\dot{r}^2}{2}+V(r)\) mentre \(E_2=\frac{\dot{\vec{\textbf{r}}}^2}{2}+U(r)\)</p>
+    <p>\(E_1=E_2\) deriva dal fatto che \(\frac{{\vec{\textbf{r}}}^2}{2}=\frac{\dot{r}^2}{2}+\frac{M^2}{2r^2}\)</p>
+<p>simpatica l'integrazione per quadrature delle equazioni del moto per un campo centrale: forse in un futuro riporterò l'immagine dall'Arnold  (pagina 81)</p>
 </body>
 </html>
