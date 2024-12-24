@@ -31,37 +31,37 @@
 </head>
 <body>
 
-    <h1>Principi variazionali/h1>
+    <h1>Principi variazionali<h1>
 <h2>Calcolo delle variaizioni</h2>
       <p>Il calcolo delle variazioni non si occupa della ricerca dei fossili, ma si occupa della ricerca degli estremi di funzione. Ma non tutte le funzioni, solo le funzioni il cui dominio di definizione <strong>è</strong> uno spazio di dimensione infinita: lo spazio delle curve. Queste curve speciali si chiamano funzionali. In sintesi il calcolo delle variazioni studia i funzionali.</p>
   <p>Un esempio banale di un funzionale è la lunghezza di una curva in uno spazio euclieo.</p>
       <p>Costruiamo questo funzionale:</p>
-      <p>Sia \(\gamma=\({\(t,x(t));t_0 \leq t \leq t_1}</p>
-      <p>\(\Phi (\gamma)=\int_{t_0}^{t_1} \sqrt{1+\dot{x}}dt\(</p>
-      <p>Consideriamo una curva \(\gamma '\( vicina alla curva \(\gamma\(</p>
-      <p>\(\gamma '=\( {\((t,x(t)+h(t));t_0 \leq t \leq t_1)\(}</p>
-      <p>In breve \(\gamma '=\gamma +h\(</p>
+      <p>Sia \(\gamma={\(t,x(t));t_0 \leq t \leq t_1}\)</p>
+      <p>\(\Phi (\gamma)=\int_{t_0}^{t_1} \sqrt{1+\dot{x}}dt\)</p>
+      <p>Consideriamo una curva \(\gamma '\( vicina alla curva \(\gamma\)</p>
+      <p>\(\gamma '= {\((t,x(t)+h(t));t_0 \leq t \leq t_1)\)}</p>
+      <p>In breve \(\gamma '=\gamma +h\)</p>
 
-      <p><strong>Def: </strong>Il funzionale \(\Phi\( si dice differenziabile se \(\Phi (\gamma +h)-\Phi (\gamma)=F+R\( dove F, che dipende linearmente da h,  la chiamiamo <strong>differenziale</strong>
-       <p>cosa vuol dire che dipende linearmente da h? se fissiamo \(\gamma\( si ha che \(F(h1+h2)=F(h1)+F(h2) \quad F(ch)=cF(h)\(</p> 
-      <p>Mentre \(R(\gamma ,h)=O(h^2):\) nel senso che se \(\lvert h \rvert \lt \epsilon; \lvert \frac{dh}{dt} \rvert \lt \epsilon\( allora si ha che \(\lvert R \rvert \lt C {\epsilon}^2\(</p>
+      <p><strong>Def: </strong>Il funzionale \(\Phi\) si dice differenziabile se \(\Phi (\gamma +h)-\Phi (\gamma)=F+R\) dove F, che dipende linearmente da h,  la chiamiamo <strong>differenziale</strong>
+       <p>cosa vuol dire che dipende linearmente da h? se fissiamo \(\gamma\( si ha che \(F(h1+h2)=F(h1)+F(h2) \quad F(ch)=cF(h)\)</p> 
+      <p>Mentre \(R(\gamma ,h)=O(h^2):\) nel senso che se \(\lvert h \rvert \lt \epsilon; \lvert \frac{dh}{dt} \rvert \lt \epsilon\( allora si ha che \(\lvert R \rvert \lt C {\epsilon}^2\)</p>
       <h5>Teorema sui funzionali</h5>
-      <p>Dato il funzionale \(\Phi(\gamma)=\int_{t_0}^{t_1}L(x(t),\dot{x}(t),t)dt\(, dobbiamo trovare un differenziale F(h) per dimostrare che è differenziabile</p>
-     <p>\(F(h)=\Phi (\gamma +h)-\Phi (\gamma)=\int_{t_0}^{t_1}\left[ L(x+h,\dot{x}+\dot{h},t)-L(x,\dot{x},t)\right] dt=\int_{t_0}^{t_1}\left[\frac{\partial L}{\partial x}h+\frac{\partial L}{\partial \dot{x}} \\dot{h} \right]dt +O(h^2)=F(h)+R \(</p>
-      <p>A noi non piace \(\dot{h}\(, per questo integrando per parti il secondo addendo lo elimini ottenendo solo \(h\( e ottieni il risultato finale</p>
-<p><strong>Def(estremale):</strong> è il punto stazionario di un funzionale (detto in parole semplici, quindi qunado \(F(h,\gamma)=0 \forall h\(</p>
-      <p>Noi siamo intelligenti quindi quale h(t) prendiamo? prendiamo gli h(t) tale per cui \(h_{iniziale}=h_{finale}=0\(</p>
+      <p>Dato il funzionale \(\Phi(\gamma)=\int_{t_0}^{t_1}L(x(t),\dot{x}(t),t)dt\), dobbiamo trovare un differenziale F(h) per dimostrare che è differenziabile</p>
+     <p>\(F(h)=\Phi (\gamma +h)-\Phi (\gamma)=\int_{t_0}^{t_1}\left[ L(x+h,\dot{x}+\dot{h},t)-L(x,\dot{x},t)\right] dt=\int_{t_0}^{t_1}\left[\frac{\partial L}{\partial x}h+\frac{\partial L}{\partial \dot{x}} \\dot{h} \right]dt +O(h^2)=F(h)+R \)</p>
+      <p>A noi non piace \(\dot{h}\), per questo integrando per parti il secondo addendo lo elimini ottenendo solo \(h\) e ottieni il risultato finale</p>
+<p><strong>Def(estremale):</strong> è il punto stazionario di un funzionale (detto in parole semplici, quindi qunado \(F(h,\gamma)=0 \forall h\)</p>
+      <p>Noi siamo intelligenti quindi quale h(t) prendiamo? prendiamo gli h(t) tale per cui \(h_{iniziale}=h_{finale}=0\)</p>
     <h4>Enunciato di un lemma di cui non ho capito la dimostrazione</h4>
-      <p>Siano \(f(t), h(t)\( due funzioni continue nell'intervallo \(t_0 \leq t \leq t_1\( e con \(h(t_0 )=h(t_1)=0\( se \(\int_{t_0}^{t_1} f(t)h(t)dt=0\( allora \(f(t)=0\(</p>
+      <p>Siano \(f(t), h(t)\) due funzioni continue nell'intervallo \(t_0 \leq t \leq t_1\) e con \(h(t_0 )=h(t_1)=0\) se \(\int_{t_0}^{t_1} f(t)h(t)dt=0\) allora \(f(t)=0\)</p>
       <h4>Teorema per ottenere le eq. di Eulero Lagrange</h4>
-    <p>voglio imporre che l'integrale \(F(h)\( sia zero</p>
-      <p>Riporto F: \(F(h)=\int_{t_0}^{t_1}\left[ \frac{d}{dt} \frac{\partial L}{\partial \dot{x}}-\frac{\partial L}{\partial x} \right] h\text{ }dt+\left( \frac{\partial L}{\partial \dot{x}} h \right) \big|_{t_0}^{t_1} \(</p>
-      <p>Essend che abbiamo deciso di prendere gli h con \(h_{iniziale}=h_{finale}=0\( il secondo termine esplode. Mentre il primo muore per il lemma che abbiamo enunciato prima: dove h è sempre h, ed f è la parentesi quadra. Abbiamo ottenuto che f deve essere zero, ottenendo in questo modo le eq. di Eulero di Lagrange</p>
+    <p>voglio imporre che l'integrale \(F(h)\) sia zero</p>
+      <p>Riporto F: \(F(h)=\int_{t_0}^{t_1}\left[ \frac{d}{dt} \frac{\partial L}{\partial \dot{x}}-\frac{\partial L}{\partial x} \right] h\text{ }dt+\left( \frac{\partial L}{\partial \dot{x}} h \right) \big|_{t_0}^{t_1} \)</p>
+      <p>Essend che abbiamo deciso di prendere gli h con \(h_{iniziale}=h_{finale}=0\) il secondo termine esplode. Mentre il primo muore per il lemma che abbiamo enunciato prima: dove h è sempre h, ed f è la parentesi quadra. Abbiamo ottenuto che f deve essere zero, ottenendo in questo modo le eq. di Eulero di Lagrange</p>
       <p><strong>IMPORTANTE!!!</strong> La proprietà di curva di essere un estremale di un funzionale non dipende dal sistema delle coordinate.</p>
 <h3>Principio di minima azione di Hamilton</h3>
-      <p>Sia \(L=T-U\(</p>
-      <p>Vogliamo dimostrare che: le eq. di Eulero-Lagrange \(\equiv\( le eq della dinamica newtoniana</p>
-      <p>\(\frac{d}{dt} \frac{\partial L}{\partial \dot{\mathbf{q}}}-\frac{\partial L}{\partial \mathbf{q}} \iff \frac{d}{dt} m\dot{mathbf{r_i}}^2+\frac{\partial U}{\partial r_i}=0\(</p>
+      <p>Sia \(L=T-U\)</p>
+      <p>Vogliamo dimostrare che: le eq. di Eulero-Lagrange \(\equiv\) le eq della dinamica newtoniana</p>
+      <p>\(\frac{d}{dt} \frac{\partial L}{\partial \dot{\mathbf{q}}}-\frac{\partial L}{\partial \mathbf{q}} \iff \frac{d}{dt} m\dot{mathbf{r_i}}^2+\frac{\partial U}{\partial r_i}=0\)</p>
   <p>\(\frac{d}{dt} \frac{\partial \left( \frac{m}{2} \dot{mathbf{q}}^2-U(q)\right)}{\partial \dot{\mathbf{q}}}-\frac{\partial \left( T(\dot{mathbf{q}})-U(q) \right)}{\partial \mathbf{q}}=0 \)</p>
       <p>\(\frac{d \left( m \dot{mathbf{q}}^2 \right)}{dt}+\frac{\partial U}{\partial \mathbf{q}}=0\)</p>
       <p>\(\vec{\dot{mathbf{r_i}}}=({r_x}_i,{r_y}_i,{r_z}_i)\) con \(i=1,...,N\) 
